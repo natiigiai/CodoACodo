@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+</head>
+<body>
+	<header>
+		<h1>Formulario usando fieldset</h1>
+	</header>
+	<main>
+		<section>
+			<form action="https://formspree.io/xwkrdgqp" method="POST" target="_blank">
+				<fieldset>
+					<legend>Datos Personales</legend>
+					<label for="nombre">Nombre</label>
+					<input type="text" name="nombre" id="nombre" required>
+					<br>
+					<label for="apellido">Apellido</label>
+					<input type="text" name="apellido" id="apellido">
+					<br>
+					<label for="mail">Correo electrónico</label>
+					<input type="text" name="mail" id="mail" placeholder="mail@mail.com" required>
+					<br>
+					<label for="pass">Clave</label>
+					<input type="password" name="pass" id="pass">
+					<br>
+					<label for="genero">Género</label>
+					<br>
+					<label>Femenino<input type="radio" name="genero"></label>
+					<label>Masculino<input type="radio" name="genero"></label>
+					<label>Otro<input type="radio" name="genero"></label>
+					<br>
+					<label for="opciones">Opciones</label>
+					<br>
+					<label>Opcion 1<input type="checkbox"></label>
+					<label>Opcion 2<input type="checkbox"></label>
+					<label>Opcion 3<input type="checkbox"></label>
+					<br>
+					<label for="cant">Cantidad</label>
+					<input type="number" name="cant" id="cant">
+					<br>
+					<label for="fecha">Fecha de nacimiento</label>
+					<input type="date" name="fecha" id="fecha">
+					<br>
+					<label for="week">Semana</label>
+					<input type="week" name="week" id="week">
+					<br>
+					<label for="url">Link</label>
+					<input type="url" name="url" id="url">
+					<br>
+					<label for="file">Archivo</label>
+					<input type="file" name="file" id="file">
+					<br>
+					<label for="rango">Rango</label>
+					<input type="range" max="90" min="10" name="rango" id="rango">
+					<br>
+					<label for="hora">Hora</label>
+					<input type="time" name="hora" id="hora">
+					<br>
+					<label for="color">Seleccionar color</label>
+					<input type="color" name="color" id="color">
+					<input type="submit" name="submit" value="Enviar formulario">
+					<input type="reset" name="reset" value="Reestablecer formulario">
+				</fieldset>				
+			</form>
+		</section>
+	</main>
+</body>
+</html>

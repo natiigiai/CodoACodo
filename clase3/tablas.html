@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<style>
+		table,tr,td{
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Tablas</h1>	
+	</header>
+	<main>
+		<section>
+			<h2>Estructura básica de una tabla en html</h2>
+			<table>
+				<tr>
+					<th>Curso</th>
+					<th>Comisión</th>
+				</tr>
+				<tr>
+					<td>Java</td>
+					<td>2009</td>
+				</tr>
+				<tr>
+					<td>Python</td>
+					<td>2000</td>
+				</tr>
+				<tr>
+					<td>PHP</td>
+					<td>2005</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h2>Colspan y Rowspan</h2>
+			<table>
+				<tr>
+					<th>Curso</th>
+					<th>Comisión</th>
+				</tr>
+				<tr>
+					<td colspan="2">Java</td>
+				</tr>
+				<tr>
+					<td>Python</td>
+					<td rowspan="2">2000</td>
+				</tr>
+				<tr>
+					<td>PHP</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h2>Estructura completa de una tabla</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Apellido</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Natalia</td>
+						<td>Giai</td>
+					</tr>
+					<tr>
+						<td>Pepe</td>
+						<td>Perez</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">Aca en general se ponen resultados</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+
+	</main>
+</body>
+</html>

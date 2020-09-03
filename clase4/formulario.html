@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+</head>
+<body>
+	<header>
+		<h1>Formularios</h1>
+	</header>
+	<main>
+		<section>
+			<form action="https://formspree.io/xwkrdgqp" method="POST" target="_blank">
+				<label for="nombre">Nombre</label>
+				<br>
+				<input type="text" id="nombre" name="nombre">
+				<br>
+				<label for="comentario">Comentarios</label>
+				<br>
+				<textarea cols="50" rows="5" id="comentario" name="comentario"></textarea>
+				<br>
+				<label for="select">Seleccionar</label>
+				<select name="select" id="select">
+					<option value="1">Uno</option>
+					<option value="2">Dos</option>
+					<option value="3">Tres</option>
+				</select>
+				<br>
+				<input type="submit" name="submit">
+				<input type="reset" name="reset">				
+			</form>
+		</section>
+	</main>
+</body>
+</html>
