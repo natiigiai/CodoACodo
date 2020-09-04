@@ -1,0 +1,62 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section{
+	color: white;
+}
+
+.margin{
+	background-color: violet;
+	width: 200px;
+	height: 150px;
+	/*margin: 10px; /*todos los lados*/
+	/*margin-left: 50px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	margin-right: 25px;*/
+	/*margin: 15px 20px 5px; /*top | left y right | bottom*/
+	/*margin: 25px 5px; /*top y bottom | left y right*/
+	margin: 5px 2px 20px 40px; /*top | right | bottom | left*/
+}
+
+.padding{
+	background-color: pink;
+	width: 200px;
+	height: 150px;
+	/*padding: 10px;
+	padding-top: 55px;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	padding-right: 15px;*/
+	padding: 10px 20px 10px 25px;
+}
+
+.border{
+	background-color: limegreen;
+	width: 200px;
+	height: 150px;
+	border: 5px solid green;  /*solid | dotted | dashed*/
+}
+
+.box-model{
+	background-color: lightblue;
+	width: 200px;
+	height: 150px;
+	margin: 30px;
+	padding: 50px;
+	border: 1px solid blue;
+}
+
+.box-sizing{
+	background-color: magenta;
+	width: 200px;
+	height: 150px;
+	/*box-sizing: border-box; /*para que el padding no se sume al tamaño de la caja*/
+	margin: 30px;
+	padding: 50px;
+	border: 2px solid purple;
+
+}
