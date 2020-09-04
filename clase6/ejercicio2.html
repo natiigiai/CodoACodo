@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/ejercicio2.css"/>
+        <title>Clase 6</title>    
+    </head>
+    <!--
+        1) Crear archivo externo para los estilos.
+        2) Colocar las etiquetas semánticas que correspondan.
+        3) Agregar un background color: #E0E0E0 que tenga 0.5 de opacidad.
+        4) Usar fuentes de Google Fonts.
+        5) Centrar el titulo principal.
+        6) Hacer que la barra de navegación nos lleve a cada parte de la página que corresponda.
+        8) Agregar los types correspondientes a cada input.
+        9) agregarle estilos a los inputs.
+        10) pie de pagina centrado.
+        11) cerrar bien las etiquetas simples, ej: <link />, <meta />, <img />
+    -->
+    <body>
+        <header>
+            <h1>Welcome!</h1>    
+        </header>
+        <nav>
+            <a href="#">Home</a>    |
+            <a href="#about">About</a>   |
+            <a href="#registro">Register</a>
+        </nav>
+        <main>
+            <div id="about">
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aliquid asperiores, earum, nesciunt quas vero cum. Nisi, sint. Incidunt sit nobis assumenda nesciunt repudiandae deleniti ratione a, culpa consequuntur ab repellendus et qui rem eos animi optio maxime laboriosam quae in commodi recusandae. Laboriosam adipisci, sequi minima culpa. Rem, sit. Magnam tempore vitae odio eos doloremque eum laborum, voluptas modi, at nulla amet sapiente nemo. Laudantium dolorem ducimus labore accusamus a vel nisi, beatae voluptatem ratione, autem harum? Atque corporis, facere rem possimus a corrupti blanditiis. Praesentium dicta molestiae ex unde officia numquam iure repudiandae voluptatum. Debitis incidunt, expedita amet?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ea eaque ducimus quos quas tempore aliquam repellat dolores, commodi earum doloremque iste id laborum, eligendi, reprehenderit quibusdam, distinctio perferendis nam adipisci dicta ut! Inventore pariatur recusandae accusantium autem ex officia iusto cum neque porro quia, velit quasi voluptates ipsa laborum praesentium ullam? Pariatur aliquid, voluptatibus officia ratione porro harum perferendis alias explicabo hic in, quasi quisquam asperiores suscipit voluptate iste dolorem odio vel nam ipsam quas repudiandae quae molestiae cumque ex assumenda. Alias eveniet distinctio fugit repellat est, tenetur sit perferendis. In laborum maxime quos, accusantium possimus voluptate quo beatae.
+                </p>
+                <img src="https://picsum.photos/500/370"/>
+            </div>
+            <div id="registro">
+                <form>
+                    <h2>Register</h2>
+                    <br>
+                    <label>
+                        Name:
+                        <br>
+                        <input id="name" name="name" placeholder="Ingrese su nombre" required="" type="text"/>
+                    </label>
+                    <br>
+                    <label>
+                        Last Name:
+                        <br>
+                        <input id="lastname" name="lastiname" placeholder="Ingrese su apellido" required="" type="text"/>
+                    </label>
+                    <br>
+                    <label>
+                        Phone:
+                        <br>
+                        <input id="phone" name="phone" placeholder="Ingrese su teléfono" required="" type="number"/>
+                    </label>
+                    <br>
+                    <label>
+                        Mail:
+                        <br>
+                        <input id="mail" name="mail" placeholder="Ingrese su correo" required="" type="email"/>
+                    </label>
+                    <br>
+                    <label>
+                        Password:
+                        <br>
+                        <input id="password" name="password" placeholder="Ingrese su contraseña" required="" type="password"/>
+                    </label>
+                    <br>
+                    <input class="boton" id="submit" type="submit" value="Sign In"/>
+                </form>
+            </div>    
+        </main>
+        <footer>
+            <p>
+                Copyright © all rights reserved.
+            </p>
+        </footer>
+    </body>
+</html>
