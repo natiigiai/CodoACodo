@@ -1,0 +1,23 @@
+/*selector universal
+
+*{
+	color: blue; 
+	}
+
+*/
+h1{
+	color: blue;
+}
+
+
+h2{
+	color: green;
+}
+
+.rojo{
+	color: red;
+}
+
+#subtitulo{
+	background-color: yellow;
+}
