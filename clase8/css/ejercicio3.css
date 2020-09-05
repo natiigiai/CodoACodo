@@ -1,0 +1,46 @@
+.flex-container{
+	background-color: #D9D9D9;
+	display: flex;
+	flex-direction: row; /*row (defecto)| column | row-reverse | column-reverse*/
+	width: 80vw;
+	height: 50vh;
+}
+
+.flex-item{
+	color: #FFF;
+	background-color: #333;
+	width: 10vw;
+	height: 15vh;
+}
+
+.flex-container2{
+	background-color: #D9D9D9;
+	display: flex;
+	flex-direction: row; /*row (defecto)| column | row-reverse | column-reverse*/
+	justify-content:space-around;
+	/*flex-start: Alinea elementos al lado izquierdo del contenedor.
+	flex-end: Alinea elementos al lado derecho del contenedor.
+	center: Alinea elementos en el centro del contenedor.
+	space-between: Muestra elementos con la misma distancia entre ellos.
+	space-around: Muestra elementos con la misma separación alrededor de ellos.
+	*/
+	width: 80vw;
+	height: 50vh;
+}
+
+.flex-container3{
+	background-color: #D9D9D9;
+	display: flex;
+	flex-direction: row; /*row (defecto)| column | row-reverse | column-reverse*/
+	justify-content:space-around;
+	align-items: center;
+	/*
+	flex-start: Alinea elementos a la parte superior del contenedor.
+	flex-end: Alinea elementos a la parte inferior del contenedor.
+	center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+	baseline: Muestra elementos en la línea base del contenedor
+	stretch: Elementos se estiran para ajustarse al contenedor.
+	 */
+	width: 80vw;
+	height: 50vh;
+}

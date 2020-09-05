@@ -1,0 +1,60 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+
+}
+
+.padre{
+	border: 1px solid black;
+	width: 50vw;
+	height: 50vh;
+	margin: auto;
+}
+
+.relative{
+	background-color: #E1367E;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	/*se posiciona en relacion al padre*/
+	top: 50px; /*empuja desde arriba 50px*/
+	left: 30px; /*empuja desde la izquierda 30px*/
+}
+
+
+.absolute{
+	background-color: #0BF6AB;
+	width: 150px;
+	height: 150px;
+	position: absolute; /*este elemento deja de tener tamaño en el flujo del html.*/
+	/*busca la posicion en referencia a un ancentro que este posicionados. En este caso
+	se posiciona respecto al body*/
+	top: 50px; /*empuja desde arriba 50px*/
+	left: 30px; /*empuja desde la izquierda 30px*/
+}
+
+.fixed{
+	background-color: #9E2AC9;
+	width: 150px;
+	height: 150px;
+	position: fixed; /*este elemento deja de tener tamaño en el flujo del html.*/
+	/*busca la posicion en referencia a la ventana del navegador y al hacer scroll queda fijo*/
+	top: 80px; 
+	left: 60px;
+	z-index: -10;/*valor negativo para para atras y valor positivo pasa para adelante*/ 
+}
+
+/*mezcla entre relative y fixed - conserva su espacio pero se va a mover hasta que
+el elemento alcance un tope (elemento padre)*/
+.sticky{
+	background-color: #08BBEF;
+	width: 150px;
+	height: 150px;
+	position: sticky; 
+	top: 20px;  
+}

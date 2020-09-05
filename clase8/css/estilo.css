@@ -1,0 +1,49 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Medidas absolutas*/
+.cm{
+	font-size: 2cm;
+}
+
+.mm{
+	font-size: 10mm;
+}
+
+.px{
+	font-size: 10px;
+}
+
+.pt{
+	font-size: 10pt;
+}
+
+.in{
+	font-size: 3in;
+}
+
+.pc{
+	font-size: 10pc;
+}
+
+/*Medidas relativas*/
+.em{ /*medida en relacion al elemento padre o ancestro mas cercano*/
+	font-size: 1.1em; /*24px + 10%  24px es el tamaño del padre y el 10% sale del .1*/
+}
+
+.padre-em{
+	font-size: 24px;
+}
+
+.rem{  /*igual que el em pero toma como elemento padre al HTML*/
+	font-size: 1rem;
+}
+
+/*Unidades flexibles (relativas al viewport)*/
+img{
+	width: 30vw;
+	height: 30vh;
+}

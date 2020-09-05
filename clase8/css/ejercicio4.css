@@ -1,0 +1,34 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	height: 25vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+}
+
+ul{
+	list-style-type: none;
+	display: flex;
+	align-self: flex-start;
+}
+
+ul li{
+	margin: 0.5em;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: .5em;
+}
+
+img{
+	border-radius: 50%;
+}
