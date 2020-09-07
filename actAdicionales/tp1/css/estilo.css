@@ -19,7 +19,7 @@ header h1{
 	padding-top: 20px;
 }
 
-nav a{
+#menu a{
 	text-decoration: none;
 	color: white;	
 	background-color: #F24704;
@@ -30,8 +30,12 @@ main{
 	min-height: 500px;
 }
 
-section h2{
-	padding: 20px 10px;
+section{
+	padding: 10px;
+}
+
+h2, h3, h4{
+	padding: 10px 0px;
 }
 
 section img{
@@ -39,25 +43,30 @@ section img{
 	margin-left: 35%;
 }
 
-details{
-	padding-top: 40px;
-}
-
-details summary{
-	width: 100px;
+#receta{
+	text-decoration: none;
 	color: white;	
 	background-color: #F24704;
-	margin-left: 10px;
-	padding: 10px;	
+	text-align: center;
+	display: block;
+	width: 100px;
+	padding:10px;
+	margin: 40px 10px 10px 10px;
 }
 
-p{
-	padding: 10px 0 0 10px;
+section ul{
+	margin-left: 20px;
 }
+
 
 footer{
 	height: 80px;
 	background-color: #FF8003;
-	text-align: center;
-	padding-top: 25px; 
+	text-align: center; 
+	padding: 10px;
+}
+
+footer nav a{
+	text-decoration: none;
+	color: blue;
 }
