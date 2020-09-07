@@ -58,6 +58,27 @@ section ul{
 	margin-left: 20px;
 }
 
+#sucursales{
+	list-style-type: none;
+}
+
+#sucursales li{
+	padding-top: 15px;
+}
+
+form{
+	padding: 10px;
+}
+
+input{
+	font-family: 'Raleway', sans-serif;	
+	height: 30px;
+	margin-top: 10px;
+}
+
+label{
+	margin: 5px;
+}
 
 footer{
 	height: 80px;
