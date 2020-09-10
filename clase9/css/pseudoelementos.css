@@ -1,0 +1,25 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1::first-letter{
+	color: pink;
+}
+
+p::first-line{
+	color: violet;
+}
+
+h2::before{
+	content: "👉"
+}
+
+
+h2::after{
+	content: "👈"
+}
+
+p::selection{
+	background-color: limegreen;
+	color: cyan;
+}
