@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+	font-size: 3rem;
+}
+
+h1:hover{
+	transition-property: color;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out; /*arranca despacio, y aumenta la velocidad
+	EASE | EASE-OUT | EASE-IN | ....*/
+	color: #7685aa;
+}
+
+#transicion{
+	width: 200px;
+	height: 40px;
+	background: rgb(36,0,22);
+background: linear-gradient(90deg, rgba(36,0,22,1) 0%, rgba(233,3,116,1) 35%, rgba(3,215,124,1) 100%);
+}
+
+#transicion:hover{
+	transition: width 2s ease-in-out;
+	width: 100vw;
+}
+
+.flex-container{
+	margin: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boton{
+	height: 10vh;
+	width: 20vw;
+	cursor: pointer;
+	transition: 2s box-shadow ease-out;
+}
+
+.boton:hover{
+	background-color: black;
+	color: white;
+	font-size: 1.1rem;
+	transform: scale(1.2);
+	box-shadow: 0 5px 2px green;
+}

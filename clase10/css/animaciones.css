@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.div-animados{
+	animation: ejemplo 10s infinite;
+}
+
+@keyframes ejemplo{
+	0%{
+		width: 10vw;
+		height: 10vh;
+		background-color: pink;
+	}
+	25%{
+		width: 20vw;
+		height: 20vh;
+		background-color: magenta;
+	}
+	50%{
+		width: 30vw;
+		height: 30vh;
+		background-color: violet;
+	}
+	75%{
+		width: 40vw;
+		height: 40vh;
+		background-color: cyan;
+	}
+	100%{
+		width: 50vw;
+		height: 50vh;
+		background-color: blue;
+	}
+}
+
+.imagen-mundo{
+	margin: 5%;
+	height: 150px;
+	width: 150px;
+	animation: mundo 4s alternate-reverse forwards;
+}
+
+.imagen-mundo:hover{
+	animation-play-state: paused;
+}
+
+@keyframes mundo{
+	from{
+		transform: translate(-5vw,0) rotate(0deg);
+	}
+	to{
+		transform: translate(60vw,0) rotate(360deg);	
+	}
+}

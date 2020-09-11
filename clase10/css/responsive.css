@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: pink;
+}
+
+
+@media screen and (max-width: 400px) {
+	body{
+		background-color: red;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+	body{
+		background-color: blue;
+	}
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+	body{
+		background-color: green;
+	}
+}
+
+/*pantallas extrachicas
+@media only screen and max-width: 600px;
+
+pantallas chicas (tablets y cellaes grandes)
+min-width 768px
+pantallas gandes (algunas pantallas de escritorio)
+min-width 992px */
