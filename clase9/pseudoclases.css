@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+p:first-child{
+	background-color: pink;
+
+}
+
+p:last-child{
+	background-color: limegreen;
+}
+
+li:nth-child(5){
+	color: violet;
+	font-weight: bold;
+}
+
+li:nth-child(3n){  /*a partir de 3 voy a darle un bgc naranja*/
+	background-color: orange;
+	
+}
+
+li:nth-child(2n+1){  /*va a cambiar el color desde la primera cada dos*/
+	background-color: blue;
+	color: white;
+}
+
+li:nth-child(even){  /*va a cambiar el color desde la primera cada dos*/
+	color: red;
+}
+
+li:nth-child(odd){  /*va a cambiar el color desde la primera cada dos*/
+	color: green;
+}
+
+a:link{ /*se aplica solo cuando el elemento aun no fue visitado*/
+	color:blue;
+}
+
+a:active{
+	color: green;
+}
+
+a:hover{
+	background-color: violet;
+	color: white;
+}
+
+a:visited{
+	color: cyan;
+	background-color: black;
+}
+
+.fab{
+	color: black;
+	font-size: 3rem;
+	text-decoration: none;
+}
+
+.fa-youtube:hover{
+	text-decoration: none;
+	color: red;
+}
+
+.fa-twitter:hover{
+	text-decoration: none;
+	color: lightblue;
+}
+
+.fa-instagram:hover{
+	text-decoration: none;
+	color: magenta;
+}

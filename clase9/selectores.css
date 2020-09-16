@@ -1,0 +1,28 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+p > strong{ /*llama al hijo directo*/
+	color: orange;
+}
+
+h2+p{ /*llama al hermano adyacente*/
+	background-color: orange;
+}
+
+.hermanoGral h2~p{/*selector de hermano general*/
+	background-color: black;
+	color: white;
+}
+
+img[alt]{/*selector de atriburos*/
+	border: 2px solid black;
+}
+
+img[alt="imagen-aleatoria"]{
+	border: 1px solid pink;
+}
+
+img[alt^="imagen-"]{
+	border: 2px solid green;
+}
