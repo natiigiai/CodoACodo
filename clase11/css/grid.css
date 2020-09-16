@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: verdana;s
+	color: #FFF;
+	background: rgb(36,0,22);
+background: linear-gradient(90deg, rgba(36,0,22,1) 0%, rgba(233,3,116,1) 35%, rgba(3,215,124,1) 100%);
+}
+
+h1{
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
+
+.grid-container{
+	display: grid;
+	/*grid-template-columns: repeat(4, 150px);     
+	grid-template-rows: 150px 150px 150px;*/
+	/*grid-template: row / columns;*/
+	grid-template-columns: repeat(3,auto);    /*igual ue usar 1fr 1fr 1fr*/
+	grid-template-rows: repeat(4, 20vh);
+	grid-gap: 10px;
+}
+
+.gid-item{
+	background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
