@@ -14,9 +14,12 @@ header{
 	background-color: #3B3B3B;
 	height: 100px;
 	text-align: center;
-	color: #CCCCCC;
-	text-transform: uppercase;
+	color: #D1158F;
 	padding-top: 33px; 
+}
+
+h1{
+	text-transform: uppercase;
 }
 
 #menu{
@@ -94,6 +97,27 @@ p{
 .fa-star{
 	font-size: 1.5rem;
 	color: #D1158F;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+}
+
+.grid-item{
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-gap: 1rem;
+	padding: 10px;
+}
+
+.grid-item:hover{
+	box-shadow: 1px 1px 5px #D1158F;
+	border-radius: 10px;
+}
+
+img[alt^="proyectos"]{
+	border-radius: 10px;
 }
 
 
