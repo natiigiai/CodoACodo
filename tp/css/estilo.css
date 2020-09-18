@@ -41,28 +41,61 @@ header{
 }
 
 main{
-	min-height: 500px;
+	min-height: 400px;
 	padding: 20px 0;
+	width: 90%;
+	margin:auto;
 }
 
-section{
+.flex-container{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 
-section img{
+.flex-container img{
 	border-radius: 50%;
 	width: 300px;
-	box-shadow: 2px black;
+	box-shadow: 2px #464047;
 	filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 
-section p{
+.flex-container div{
 	margin: 30px;
 	width: 600px;
+
 }
+
+
+div{
+	margin: 20px 5px;
+}
+
+h3{
+	margin-bottom: 10px;	
+}
+
+ol li{
+	list-style-type: none;
+	padding: 10px 0 0 20px;
+}
+
+div table{
+	width: 250px;
+	text-align: center;
+}
+
+p{
+	padding-bottom: 5px;
+}
+
+
+.fa-star{
+	font-size: 1.5rem;
+	color: #D1158F;
+}
+
 
 footer{
 	height: 80px;
@@ -73,9 +106,27 @@ footer{
 
 footer nav a{
 	text-decoration: none;
+	padding: 0 5px;
 }
 
-.fab, .fas{
+a .fab, a .fas{
 	color: #CCCCCC;
 	font-size: 2rem;
 }
+
+a .fa-envelope:hover{
+	color:#B8403A;
+}
+
+a .fa-linkedin:hover{
+	color: #0077B5;
+}
+
+a .fa-github:hover{
+	color: #181717;
+}
+
+a .fa-whatsapp:hover{
+	color: #00E676;
+}
+
