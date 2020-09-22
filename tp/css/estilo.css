@@ -28,6 +28,7 @@ header h1{
 	color: #CCCCCC;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 }
@@ -53,6 +54,7 @@ main{
 .flex-container{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -126,6 +128,7 @@ form{
 
 input{
 	margin: 5px 0;
+	padding-left: 10px;
 	background-color: #FFEBEB;
 	width: 450px;
 	height: 30px;
@@ -136,6 +139,7 @@ input{
 
 textarea{
 	margin: 5px 0;
+	padding-left: 10px;
 	background-color: #FFEBEB;
 	width: 450px;
 	height: 100px;
@@ -143,7 +147,6 @@ textarea{
 	border: 1px solid #CCCCCC;
 	border-radius: 5px;	
 }
-
 
 #submit{
 	background-color: #3B3B3B;
@@ -193,3 +196,92 @@ a .fa-whatsapp:hover{
 	color: #00E676;
 }
 
+@media (min-width: 320px) and (max-width: 400px) {
+	header{
+		height: 20%;
+		padding-top: 15px;
+	}
+	.flex-container img{
+		width: 60%;
+	}
+	main{
+		width: 100%;
+		min-height: 300px;
+	}
+	footer{
+		height: 20%;
+		text-align: center;
+	}
+	footer p{
+		width: 85%;
+	}
+	.grid-container{
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+	}
+	.grid-item{
+		display: grid;
+		grid-template-columns:1fr;
+		padding: 5px;
+	}
+	img[alt^="proyectos"]{
+		width: 50%;
+	}
+	.grid-item div{
+		width: 80%;
+	}
+	form{
+		width: 100%;
+		padding:5px;
+	}
+
+	input{
+		width: 90%;
+		height: 30px;
+	}
+
+	textarea{
+		width: 90%;
+		height: 70px;
+	}
+
+	form div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+	header{
+		height: 25%;
+		padding-top: 15px;
+	}
+	main{
+		width: 100%;
+		min-height: 300px;
+	}
+	form{
+		width: 100%;
+		padding:5px;
+	}
+
+	input{
+		width: 80%;
+		height: 30px;
+	}
+
+	textarea{
+		width: 80%;
+		height: 70px;
+	}
+	form div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+}
