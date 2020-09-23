@@ -11,12 +11,12 @@ p::first-line{
 }
 
 h2::before{
-	content: "👉"
+	content: "👉";
 }
 
 
 h2::after{
-	content: "👈"
+	content: "👈💜";
 }
 
 p::selection{

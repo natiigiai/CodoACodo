@@ -1,0 +1,12 @@
+JS
+lenguaje de programador multiparadigma
+debilmente tipado
+muy flexible
+es multiplataforma
+trabaja del lado del cliente
+unico lenguaje de programacion que entienden los navegadores
+vamos a ver
+-vanila
+-ajax
+el script va al final
+es case sensitive
