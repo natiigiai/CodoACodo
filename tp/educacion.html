@@ -9,15 +9,21 @@
 	<title>Porfolio</title>
 </head>
 <body>
-	<header>
+	<script type="text/javascript">
+		window.onload = function(){
+			document.getElementById("educacion").style.paddingBottom = '5px';
+			document.getElementById("educacion").style.borderBottom= '2px solid #D1158F';
+		}
+	</script>
+	<header id="header">
 		<h1>Natalia Giai</h1>
 		<h2>Soy desarrolladora Full-Stack Web Developer</h2>
 	</header>
 	<nav id="menu">
-		<a href="index.html">Acerca de mi</a>
-		<a href="educacion.html">Educación</a>
-		<a href="proyectos.html">Proyectos</a>
-		<a href="contacto.html">Contacto</a>
+		<a href="index.html" id="index">Acerca de mi</a>
+		<a href="educacion.html" id="educacion">Educación</a>
+		<a href="proyectos.html" id="proyectos">Proyectos</a>
+		<a href="contacto.html" id="contacto">Contacto</a>
 	</nav>
 	<main>
 		<section>

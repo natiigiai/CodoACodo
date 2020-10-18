@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <title>
+            Ejemplo Clase 18
+        </title>
+    </head>
+    <body onload="cambiarColor();">
+        <!-- es un evento q se activa cuando se termina de cargar la página -->
+        <div class="flex-container" id="txt">
+            <div class="flex-item">
+                <h1>
+                    Hola Mundo!
+                </h1>
+            </div>
+            <div class="flex-item">
+                <button onclick="parar();" type="submit">
+                    <i class="far fa-hand-paper">
+                    </i>
+                </button>
+            </div>
+        </div>
+        <script>
+            let intervalo; 
+            function cambiarColor() {
+                intervalo = setInterval(colores, 400) // setInterval(función, milisegundos) -> es un método q ejecuta una función de forma repetitiva
+            }
+            function colores() {
+                let elemento = document.getElementById("txt")
+                if (elemento.style.color == "black") {
+                    elemento.style.color = "white";
+                } else {
+                    elemento.style.color = "black";
+                }            
+            }
+            function parar() {
+                clearInterval(intervalo); // cancela el setInterval
+            }
+        </script>
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/4465e0dafc.js ">
+        </script>
+    </body>
+</html>

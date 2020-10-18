@@ -120,6 +120,10 @@ img[alt^="proyectos"]{
 	border-radius: 10px;
 }
 
+main .contacto{
+	width: 70%;
+}
+
 
 form{
 	width: 500px;
@@ -138,6 +142,7 @@ input{
 }
 
 textarea{
+	resize: none;
 	margin: 5px 0;
 	padding-left: 10px;
 	background-color: #FFEBEB;

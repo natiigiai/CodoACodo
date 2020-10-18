@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet"/>
+        <title>
+            Clase 19
+        </title>
+    </head>
+    <body class="my-3 mx-2">
+        <header>
+            <h1>
+                JavaScript Parte 7
+            </h1>
+        </header>
+        <section class="my-5">
+            <button class="btn btn-warning" id="alert">
+                Event
+            </button>
+            <button class="btn btn-outline-warning" id="miFuncion">
+                <!-- onclick="miFuncion()" -->
+                On Event
+            </button>
+        </section>
+        <div class="mt-3" id="mouseEvent">
+            <!-- el error era que estaba poniendo la clase mt-3 de bootstrap en el id al lado de mouseEvent -->
+            <p>
+                Qué evento se esta ejecutando?
+            </p>
+        </div>
+        <div class="grid-container mt-5">
+            <div class="border border-warning p-5" id="grid-item">
+                <ul>
+                    <li>
+                        click
+                    </li>
+                    <li>
+                        dblclick
+                    </li>
+                    <li>
+                        mouseenter
+                    </li>
+                    <li>
+                        mouseleave
+                    </li>
+                    <li>
+                        mousemove
+                    </li>
+                    <li>
+                        mousedown
+                    </li>
+                    <li>
+                        mouseup
+                    </li>
+                </ul>
+            </div>
+            <div class="border border-dark p-5" id="teclado">
+                <ul>
+                    <li>
+                        keydown
+                    </li>
+                    <li>
+                        keyup
+                    </li>
+                    <li>
+                        keypress
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-5">
+            <a href="https://google.com">
+                ir a Google
+            </a>
+        </div>
+        <section class="my-5">
+            <form id="form">
+                <label>
+                    Ejemplo
+                    <input type="text">
+                    </input>
+                </label>
+                <label>
+                    Selecciona una opción
+                    <select class="select" name="select">
+                        <option value="a">
+                            A
+                        </option>
+                        <option value="b">
+                            B
+                        </option>
+                        <option value="c">
+                            C
+                        </option>
+                    </select>
+                    <div class="result">
+                    </div>
+                    <!-- el error era que estaba agregando el resultado dentro del select -->
+                </label>
+            </form>
+        </section>
+        <script src="main.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+        </script>
+    </body>
+</html>
