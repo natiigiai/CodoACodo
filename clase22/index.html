@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet"/>
+        <title>
+            Clase 22
+        </title>
+    </head>
+    <body class="m-3">
+        <header>
+            <h1>
+                Vue.js Parte 2
+            </h1>
+        </header>
+        <div id="app">
+            <div class="my-5">
+                <p>
+                    Otra forma de escribir v-bind:
+                </p>
+                <input :value="valor" type="text"/>
+                <input type="text" v-bind:value="valor"/>
+                <p>
+                    Otra forma de escribir v-on
+                </p>
+                <input @click="enviar" class="btn btn-dark" type="submit"/>
+                <input class="btn btn-dark" type="submit" v-on:click="enviar"/>
+                <button class="btn btn-outline-dark" v-on:click="masUno">
+                    {{ contador }}
+                </button>
+            </div>
+            <div class="my-5">
+                <h3>
+                    Computed
+                </h3>
+                <input type="number" v-model.number="num1"/>
+                <input type="number" v-model.number="num2"/>
+                <!-- nos devuelve un string así que hay que usar un modificador, para convertirlo en tipo númerico usamos v-model.number -->
+                <p>
+                    Resultado {{multiplicar}}
+                </p>
+            </div>
+            <div class="m-3">
+                <label>
+                    Ancho
+                    <input type="range" v-model="ancho"/>
+                </label>
+                <label>
+                    Alto
+                    <input type="range" v-model="alto"/>
+                </label>
+                <img :src="linkCompleto" class="d-block"/>
+                <p>
+                    {{linkCompleto}}
+                </p>
+            </div>
+            <etiqueta-vue titulo="Hola Mundo">
+            </etiqueta-vue>
+            <etiqueta-vue titulo="Otro titulo">
+            </etiqueta-vue>
+            <etiqueta-vue titulo="Otro">
+            </etiqueta-vue>
+            <etiqueta-vue>
+            </etiqueta-vue>
+        </div>
+        <div>
+            <!-- bootstrap -->
+            <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+            </script>
+            <script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+            </script>
+            <script crossorigin="anonymous" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js">
+            </script>
+            <!-- vue -->
+            <script src="https://unpkg.com/vue@2.4.2">
+            </script>
+            <!-- js -->
+            <script src="main.js">
+            </script>
+        </div>
+    </body>
+</html>

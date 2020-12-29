@@ -28,14 +28,14 @@
 	<main>
 		<h2>Contacto</h2>
 		<section class="flex-container">
-			<form action="https://formspree.io/mnqoaebl" method="POST" target="_blank">
+			<form action="https://formspree.io/mnqoaebl" method="POST" onsubmit="return validarForm();" target="_blank">
 				Nombre
 				<br>
-				<input type="text" name="nombre" id="nombre" onblur="validarForm();" >
+				<input type="text" name="nombre" id="nombre">
 				<br>
 				Email
 				<br>
-				<input type="email" name="email" id="email">
+				<input type="email" name="email" id="email" onblur="validarMail();">
 				<br>
 				Consulta
 				<br>
@@ -56,5 +56,6 @@
 		</nav>
 		<p>&copy; Todos los derechos reservados - 2020</p>
 	</footer>
+	<script src="js/main.js"></script>
 </body>
 </html>
