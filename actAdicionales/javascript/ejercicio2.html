@@ -11,8 +11,15 @@
 		<h1 >Ejercicio 2</h1>
 	</header>
 
-
-	
-	<script src="js/ejercicio2.js" ></script>
+	<script type="text/javascript">
+		for (var i = 11; i >= 9; i--) {
+			document.write("<h2>La tabla del "+i+"</h2>");
+			document.write('<ol class="list-group">');
+			for (var j = 1; j <= 9; j++) {
+				document.write('<li class="list-group-item">'+i+' x '+j+' = '+i*j+'</li>');
+			}
+			document.write('</ol>');
+		}
+	</script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+.form-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group i {
+    width: 15%;
+    max-width: 50px;
+}
+.input-group {
+    flex-wrap: nowrap;
+}
+.form {
+    max-width: 400px;
+    width: 100%;
+    max-height: 550px;
+    height: 70%;
+    padding: 20px;
+    margin: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

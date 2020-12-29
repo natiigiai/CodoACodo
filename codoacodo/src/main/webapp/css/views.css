@@ -1,0 +1,50 @@
+.grid {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 70px 1fr;
+}
+.main {
+    grid-area: main;
+}
+/* Header */
+header {
+    grid-area: header;
+}
+.navbar-bnts{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    gap: 6%;
+}
+/* Footer */
+.footer {
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer .info,
+.footer .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.footer .info {
+    align-items: baseline;
+    padding: 0.5rem 1rem 0;
+}
+.footer .contact{
+    padding: 0 1rem 0.5rem;
+}
+.footer i {
+    font-size: 1.8rem;
+    margin: 0 5px;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}

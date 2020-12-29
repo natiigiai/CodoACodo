@@ -1,0 +1,31 @@
+.grid-product-comment {
+    display: grid;
+    grid-template: 20vw 1fr / repeat(4, 10vw) 1fr 10vw 10vw;
+    grid-template-areas: ". img img data data data ." ". . comments comments comments . .";
+    padding: 1%;
+}
+.product-img {
+    grid-area: img;
+    padding: 0.5rem;
+}
+.product-data {
+    grid-area: data;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5rem 2rem;
+}
+.progress {
+    height: 2rem;
+    position: relative;
+    font-size: 1rem;
+}
+.rate-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.product-comments {
+    grid-area: comments;
+}
